@@ -26,4 +26,5 @@ if __name__ == '__main__':
     updater = Updater(TOKEN)
     updater.start_webhook(listen="0.0.0.0", port=port, url_path=TOKEN)
     updater.bot.setWebhook("https://bookalift.mybluemix.net/" + TOKEN)
+    print updater.bot.get_webhook_info
     updater.idle()
